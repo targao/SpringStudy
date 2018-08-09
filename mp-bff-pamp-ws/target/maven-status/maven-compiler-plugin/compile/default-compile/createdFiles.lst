@@ -1,0 +1,6 @@
+br/com/viavarejo/mp/bff/pamp/conf/FeignConfiguration.class
+br/com/viavarejo/mp/bff/pamp/conf/ModuleConfiguration.class
+br/com/viavarejo/mp/bff/pamp/conf/JacksonConfiguration.class
+br/com/viavarejo/mp/bff/pamp/conf/EurekaClientConfiguration.class
+br/com/viavarejo/mp/bff/pamp/Application.class
+br/com/viavarejo/mp/bff/pamp/conf/SwaggerConfiguration.class

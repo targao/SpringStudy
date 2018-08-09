@@ -1,0 +1,28 @@
+server:
+  port: 8001
+  servlet:
+    display-name: mp-bff-pamp-hlg
+
+spring:
+  application:
+    name: ${server.servlet.display-name}
+  cloud:
+    config:
+      enabled: true  # Se quiser utilizar confg remota mudar para TRUE
+      label: hlg    # O label representa a branch do git
+      discovery:
+        enabled: true
+        serviceId: mp-configuration-hlg
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://mktplace-hlg-mparceus01.dc.nova:7700/eureka/,http://mktplace-hlg-mparceus02.dc.nova:7700/eureka/
+    #enabled: false
+  instance:
+    appname: ${spring.application.name}
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    preferIpAddress: true
+    nonSecurePort: ${server.port}
+    managementPort: ${server.port}
