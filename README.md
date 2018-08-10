@@ -1,1 +1,1 @@
-mp-bff-pamp
+demo-project
