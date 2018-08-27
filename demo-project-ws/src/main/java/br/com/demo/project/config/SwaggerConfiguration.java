@@ -15,11 +15,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfiguration {
 
     private static final String PATH_MAPPING = "/";
-
     private static final String PACKAGE_BASE = "br.com.demo.demo-project";
 
-    //@Value("${info.version}")
-    private String projectVersion;
 
     @Bean
     Docket rsApi() {
@@ -35,9 +32,8 @@ public class SwaggerConfiguration {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("demo-project API (Back for Front End)")
-                .description("Serviços para serem expostos em Front Ends")
-                .version(projectVersion)
+                .title("demo-project API")
+                .description("Study Project")
                 .build();
     }
 

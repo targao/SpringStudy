@@ -6,6 +6,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = { "br.com.demo.project.core" })
+@ComponentScan(basePackages = { "br.com.demo.project" })
 @EnableAutoConfiguration(exclude = { FreeMarkerAutoConfiguration.class })
 public class ModuleConfiguration { }
